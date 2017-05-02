@@ -9,6 +9,6 @@ mtgResponse = requests.get(
 cardCollection = json.loads(mtgResponse.text)
 
 for card in cardCollection['cards']:
-    print("card name: {}, mana cost: {}, type: {}"
-          .format(card['name'], card['manaCost'], card['type']))
+    print("card name: {}"
+          .format(card['name']))
 
